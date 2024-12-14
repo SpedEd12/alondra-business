@@ -7,6 +7,34 @@
 <link rel="stylesheet" href="css/main.css">    
     </head>
   <body>
-      <h1 class="title">HomePage</h1>
+<header>
+      <h1 class="title">Alondra's Photography</h1>
+</header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <article class="post">
+            <img src="example1.jpg" alt="A beautiful landscape">
+            <h2>The Beauty of Nature</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique, erat eget aliquet gravida, leo lectus ultrices justo, non luctus risus lorem non justo.</p>
+        </article>
+        <article class="post">
+            <img src="example2.jpg" alt="City skyline at night">
+            <h2>Cityscapes</h2>
+            <p>Nulla facilisi. Cras consequat nisl at urna dictum, ac interdum erat bibendum. Vivamus at sagittis justo, sit amet consectetur lectus.</p>
+        </article>
+        <article class="post">
+            <img src="example3.jpg" alt="Wildlife close-up">
+            <h2>Wildlife Photography</h2>
+            <p>Suspendisse potenti. Curabitur vehicula ultricies massa, vitae egestas libero tempor ac. Praesent vitae dictum lectus.</p>
+        </article>
+    </div>
+    <footer>
+<p>&copy; 2024 My Photography Blog. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
