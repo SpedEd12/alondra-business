@@ -4,7 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Alondra's Photography</title>
-    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff; /* Light text */
+            background-color: #1a1a1a; /* Dark gray background */
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffb400; /* Gold accent for links */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background: #1a1a1a; /* Dark header */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .title {
+            font-size: 2rem;
+            color: #ffb400; /* Gold for the title */
+        }
+
+        /* Navigation */
+        nav {
+            background: #292929; /* Slightly lighter gray */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffb400;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d99a00;
+        }
+
+        /* About Section */
+        .container {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: #ffb400;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-intro, .my-philosophy, .testimonials {
+            margin-bottom: 40px;
+            background: #292929; /* Slightly lighter gray for contrast */
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Testimonials */
+        blockquote {
+            background: #1a1a1a; /* Dark background for quotes */
+            border-left: 5px solid #ffb400; /* Gold border */
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        blockquote footer {
+            text-align: right;
+            color: #cccccc;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #cccccc;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffb400;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,7 +135,7 @@
         <a href="https://speded12.github.io/alondra-business/contact.html">Contact</a>
     </nav>
 
-    <div class="container about-container">
+    <div class="container">
         <section class="about-intro">
             <h2>About Me</h2>
             <img src="images/about_me.JPG" alt="Alondra" class="about-img">
@@ -47,6 +165,5 @@
     <footer>
         <p>&copy; 2024 Alondra's Photography. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
