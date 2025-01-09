@@ -10,13 +10,13 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #ffffff; /* Light text */
-            background-color: #1a1a1a; /* Dark gray background */
+            color: #ffffff;
+            background-color: #1a1a1a;
         }
 
         a {
             text-decoration: none;
-            color: #ffb400; /* Gold accent for links */
+            color: #ffb400;
         }
 
         a:hover {
@@ -25,19 +25,19 @@
 
         /* Header */
         header {
-            background: #1a1a1a; /* Dark header */
+            background: #1a1a1a;
             text-align: center;
             padding: 20px 0;
         }
 
         .title {
             font-size: 2rem;
-            color: #ffb400; /* Gold for the title */
+            color: #ffb400;
         }
 
         /* Navigation */
         nav {
-            background: #292929; /* Slightly lighter gray */
+            background: #292929;
             text-align: center;
             padding: 10px 0;
         }
@@ -64,17 +64,34 @@
             margin-bottom: 20px;
         }
 
+        .about-intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background: #292929;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
         .about-img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
+            max-width: 300px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .about-intro, .my-philosophy, .testimonials {
+        .about-text {
+            max-width: 600px;
+        }
+
+        .about-text p {
+            line-height: 1.6;
+        }
+
+        .my-philosophy, .testimonials {
             margin-bottom: 40px;
-            background: #292929; /* Slightly lighter gray for contrast */
+            background: #292929;
             border-radius: 10px;
             padding: 20px;
         }
@@ -85,8 +102,8 @@
 
         /* Testimonials */
         blockquote {
-            background: #1a1a1a; /* Dark background for quotes */
-            border-left: 5px solid #ffb400; /* Gold border */
+            background: #1a1a1a;
+            border-left: 5px solid #ffb400;
             padding: 15px 20px;
             margin: 20px 0;
             font-style: italic;
@@ -114,8 +131,13 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .container {
-                padding: 20px;
+            .about-intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-img {
+                margin-bottom: 20px;
             }
 
             h2 {
@@ -137,10 +159,12 @@
 
     <div class="container">
         <section class="about-intro">
-            <h2>About Me</h2>
             <img src="images/about_me.JPG" alt="Alondra" class="about-img">
-            <p>Hi, I'm Alondra, a passionate photographer who finds beauty in every moment. Photography is my way of capturing the world's magic and transforming fleeting moments into lasting memories. I specialize in portrait, landscape, and wildlife photography, always aiming to tell a story with every shot I take.</p>
-            <p>With years of experience and a deep love for visual storytelling, I work with clients to create breathtaking images that reflect their unique personalities and surroundings. Whether it’s a personal photoshoot or capturing the beauty of nature, I strive to deliver photos that are as exceptional as the moments they represent.</p>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm Alondra, a passionate photographer who finds beauty in every moment. Photography is my way of capturing the world's magic and transforming fleeting moments into lasting memories. I specialize in portrait, landscape, and wildlife photography, always aiming to tell a story with every shot I take.</p>
+                <p>With years of experience and a deep love for visual storytelling, I work with clients to create breathtaking images that reflect their unique personalities and surroundings. Whether it’s a personal photoshoot or capturing the beauty of nature, I strive to deliver photos that are as exceptional as the moments they represent.</p>
+            </div>
         </section>
 
         <section class="my-philosophy">
