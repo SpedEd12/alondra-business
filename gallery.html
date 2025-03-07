@@ -10,58 +10,64 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #ffffff; /* Light text */
-            background-color: #1a1a1a; /* Dark gray background */
+            color: #333333; /* Dark gray for text */
+            background-color: #ffffff; /* Clean white background */
         }
 
         a {
             text-decoration: none;
-            color: #ffb400; /* Gold accent for links */
+            color: #FFB347; /* Gold accent for links */
         }
 
         a:hover {
             text-decoration: underline;
+            color: #F5A623; /* Slightly darker gold on hover */
         }
 
         /* Header */
         header {
-            background: #1a1a1a; /* Dark header */
+            background: #ffffff; /* White header */
             text-align: center;
             padding: 20px 0;
         }
 
         .title {
             font-size: 2rem;
-            color: #ffb400; /* Gold for the title */
+            color: #FFB347; /* Gold for the title */
         }
 
         /* Navigation */
         nav {
-            background: #292929; /* Slightly lighter gray */
+            background: #ffffff; /* White background */
             text-align: center;
             padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for navigation */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
             margin: 0 15px;
-            color: #ffb400;
+            color: #333333; /* Dark text for links */
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #d99a00;
+            color: #FFB347; /* Gold on hover */
         }
 
         /* Gallery Section */
         .container {
-            padding: 40px 20px;
+            padding: 80px 20px 40px; /* Extra padding to account for fixed nav */
         }
 
         h2 {
             text-align: center;
             margin-bottom: 20px;
             font-size: 2rem;
-            color: #ffb400;
+            color: #FFB347; /* Gold for heading */
         }
 
         .gallery-grid {
@@ -73,11 +79,12 @@
 
         .gallery-item {
             text-align: center;
-            background: #292929; /* Slightly lighter gray for contrast */
+            background: #f9f9f9; /* Light background for items */
             border-radius: 10px;
             overflow: hidden;
             padding: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
 
         .gallery-item:hover {
@@ -94,20 +101,20 @@
 
         .gallery-item p {
             font-size: 1rem;
-            color: #ffffff;
+            color: #333333; /* Dark gray for text */
         }
 
         /* Footer */
         footer {
-            background: #1a1a1a;
-            color: #cccccc;
+            background: #333333; /* Dark background */
+            color: #ffffff; /* Light text */
             text-align: center;
             padding: 10px 0;
             font-size: 0.9rem;
         }
 
         footer a {
-            color: #ffb400;
+            color: #FFB347; /* Gold for links */
             font-weight: bold;
         }
 
@@ -166,4 +173,3 @@
     </footer>
 </body>
 </html>
-
