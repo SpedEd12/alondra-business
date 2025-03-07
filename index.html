@@ -133,71 +133,72 @@
             margin-bottom: 30px;
         }
 
-/* Services Section */
-.services {
-    padding: 60px 20px;
-    text-align: center;
-    background: #ffffff; /* White background */
-    display: flex;
-    justify-content: center; /* Center the items horizontally */
-    gap: 20px; /* Space between the items */
-    flex-wrap: wrap; /* Ensures items wrap if the screen is small */
-}
+        /* Services Section */
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+            background: #ffffff; /* White background */
+            display: flex;
+            justify-content: center; /* Center the items horizontally */
+            gap: 20px; /* Space between the items */
+            flex-wrap: wrap; /* Ensures items wrap if the screen is small */
+        }
 
-/* Service Title */
-.services h2 {
-    font-size: 2.5rem;
-    color: #333333;
-    margin-bottom: 40px;
-    width: 100%; /* Ensures the h2 takes up full width */
-    text-align: center; /* Ensures the text is centered */
-}
+        /* Service Title */
+        .services h2 {
+            font-size: 2.5rem;
+            color: #333333;
+            margin-bottom: 40px;
+            width: 100%; /* Ensures the h2 takes up full width */
+            text-align: center; /* Ensures the text is centered */
+        }
 
-/* Each Service Item */
-.service-item {
-    width: 250px; /* Set width for each service item */
-    height: 350px; /* Set a fixed height for uniformity */
-    box-sizing: border-box; /* Ensure padding is inside the width/height */
-    overflow: hidden; /* Hide overflow to avoid stretched images */
-    background-color: #f9f9f9; /* Optional: background color for the service item */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for service items */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the content inside each service item */
-    justify-content: space-between; /* Distribute space evenly within the service item */
-}
+        /* Each Service Item */
+        .service-item {
+            width: 250px; /* Set width for each service item */
+            height: 350px; /* Set a fixed height for uniformity */
+            box-sizing: border-box; /* Ensure padding is inside the width/height */
+            overflow: hidden; /* Hide overflow to avoid stretched images */
+            background-color: #f9f9f9; /* Optional: background color for the service item */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for service items */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the content inside each service item */
+            justify-content: space-between; /* Distribute space evenly within the service item */
+        }
 
-/* Optional: Add responsiveness for smaller screens */
-@media (max-width: 768px) {
-    .services {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center;
-    }
+        /* Optional: Add responsiveness for smaller screens */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column; /* Stack items vertically on small screens */
+                align-items: center;
+            }
 
-    .service-item {
-        width: 90%; /* Make the service items take up more space on small screens */
-        margin-bottom: 20px;
-    }
-}
+            .service-item {
+                width: 90%; /* Make the service items take up more space on small screens */
+                margin-bottom: 20px;
+            }
+        }
 
-.service-item img {
-    width: 100%; /* Ensure images take full width */
-    height: 180px; /* Fixed height for images */
-    object-fit: cover; /* Crop the image to cover the container without distortion */
-    border-radius: 8px; /* Rounded corners for the images */
-    margin-bottom: 15px; /* Space between image and text */
-}
+        .service-item img {
+            width: 100%; /* Ensure images take full width */
+            height: 180px; /* Fixed height for images */
+            object-fit: cover; /* Crop the image to cover the container without distortion */
+            border-radius: 8px; /* Rounded corners for the images */
+            margin-bottom: 15px; /* Space between image and text */
+        }
 
-.service-item h3 {
-    font-size: 1.4rem;
-    color: #FFB347; /* Warm honey gold for heading */
-}
+        .service-item h3 {
+            font-size: 1.4rem;
+            color: #FFB347; /* Warm honey gold for heading */
+        }
 
-.service-item p {
-    font-size: 1rem;
-    color: #555555;
-}
+        .service-item p {
+            font-size: 1rem;
+            color: #555555;
+        }
+
         /* Testimonial Section */
         .testimonial {
             padding: 60px 20px;
@@ -238,7 +239,6 @@
             color: #FFB347;
             font-weight: bold;
         }
-
     </style>
 </head>
 <body>
@@ -266,27 +266,29 @@
     </section>
 
     <!-- Services Section -->
-    <div class="service-item">
-    <img src="images/fifthteen.JPG" alt="Weddings">
-    <a href="contact.html">
-        <h3>Weddings</h3>
-    </a>
-    <p>Capturing your special day with timeless photos.</p>
+    <section class="services">
+        <div class="service-item">
+            <img src="images/fifthteen.JPG" alt="Weddings">
+            <a href="contact.html">
+                <h3>Weddings</h3>
+            </a>
+            <p>Capturing your special day with timeless photos.</p>
         </div>
     
         <div class="service-item">
             <img src="images/landscape.JPG" alt="Service 2">
-           <a href="contact.html">
-               <h3>Portraits</h3>
-           </a>
+            <a href="contact.html">
+                <h3>Portraits</h3>
+            </a>
             <p>Professional and personal portraits for any occasion.</p>
         </div>
+        
         <div class="service-item">
             <img src="images/bonbon.jpeg" alt="Service 3">
             <a href="contact.html">
-            <h3>Events</h3>
+                <h3>Events</h3>
             </a>
-                <p>Documenting all types of events with passion and precision.</p>
+            <p>Documenting all types of events with passion and precision.</p>
         </div>
     </section>
 
@@ -307,4 +309,3 @@
 
 </body>
 </html>
-
