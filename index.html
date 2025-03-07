@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Alondra's Photography</title>
+    <title>Alondra's Photography</title>
     <style>
         /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #4A3F35; /* Dark brown for readability */
-            background-color: #FFF8E7; /* Soft warm cream */
+            color: #333333; /* Dark gray for text */
+            background-color: #ffffff; /* Clean white background */
         }
 
         /* Links */
         a {
             text-decoration: none;
-            color: #F4A261; /* Warm honey gold */
+            color: #FFB347; /* Warm honey gold for links */
         }
 
         a:hover {
             text-decoration: underline;
-            color: #E68950; /* Slightly deeper warm gold */
+            color: #F5A623; /* Slightly darker gold on hover */
+        }
+
+        /* Navigation */
+        nav {
+            background: #ffffff; /* White background */
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for navigation */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #333333; /* Dark text */
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #FFB347; /* Gold highlight on hover */
         }
 
         /* Hero Section */
         .hero-section {
             background: url('images/about_me.JPG') no-repeat center center/cover;
-            color: #4A3F35; /* Dark brown for contrast */
+            color: #ffffff; /* White text for contrast */
             text-align: center;
-            padding: 100px 20px;
-            min-height: 250px;
+            padding: 120px 20px;
+            min-height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
         /* Hero Overlay */
@@ -46,11 +70,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 248, 231, 0.6); /* Warm light overlay */
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for image contrast */
             z-index: 1;
         }
 
-        /* Ensure Text Appears on Top */
+        /* Text on Hero Section */
         .hero-section .title,
         .hero-section .tagline,
         .hero-section .cta-button {
@@ -60,25 +84,25 @@
 
         /* Title Styling */
         .hero-section .title {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         /* Tagline Styling */
         .hero-section .tagline {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-bottom: 20px;
-            opacity: 0.9;
+            opacity: 0.8;
         }
 
         /* CTA Button */
         .cta-button {
             display: inline-block;
-            padding: 14px 28px;
-            background: #FFB347; /* Soft golden orange */
-            color: #4A3F35;
-            font-size: 1rem;
+            padding: 15px 35px;
+            background: #FFB347; /* Soft gold */
+            color: #333333; /* Dark text for button */
+            font-size: 1.2rem;
             font-weight: bold;
             border-radius: 8px;
             transition: background 0.3s ease, transform 0.2s ease;
@@ -86,207 +110,168 @@
         }
 
         .cta-button:hover {
-            background: #E68950; /* Darker warm gold */
-            transform: translateY(-2px);
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 70px 20px;
-                min-height: 300px;
-            }
-
-            .hero-section .title {
-                font-size: 2.4rem;
-            }
-
-            .hero-section .tagline {
-                font-size: 1.2rem;
-            }
-        }
-
-        /* Navigation */
-        nav {
-            background: #FFF8E7; /* Soft warm cream */
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #F4A261; /* Warm honey gold */
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #E68950; /* Darker gold hover */
+            background: #F5A623; /* Darker gold on hover */
+            transform: translateY(-3px);
         }
 
         /* Intro Section */
         .intro {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
-            background: #FFF5E1; /* Soft peachy ivory */
+            background: #f9f9f9; /* Soft gray background */
         }
 
         .intro h2 {
             margin-bottom: 20px;
-            font-size: 2.2rem;
-            color: #4A3F35; /* Dark brown */
+            font-size: 2.5rem;
+            color: #333333;
         }
 
         .intro p {
-            margin-bottom: 20px;
             font-size: 1rem;
-            color: #6B4F31; /* Lighter brown text */
+            color: #555555; /* Medium gray for text */
+            margin-bottom: 30px;
         }
 
         /* Services Section */
         .services {
-            background: #FAF3E0; /* Warm beige for subtle contrast */
-            padding: 40px 20px;
+            padding: 60px 20px;
+            text-align: center;
+            background: #ffffff; /* White background */
         }
 
         .services h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2rem;
-            color: #4A3F35; /* Dark brown */
+            font-size: 2.5rem;
+            color: #333333;
+            margin-bottom: 40px;
         }
 
         .service-item {
+            display: inline-block;
+            margin: 20px;
             text-align: center;
-            margin-bottom: 30px;
+            width: 250px;
         }
 
         .service-item img {
             width: 100%;
-            max-width: 300px;
+            max-width: 220px;
             border-radius: 10px;
             margin-bottom: 15px;
         }
 
         .service-item h3 {
             font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: #F4A261; /* Warm honey gold */
+            color: #FFB347; /* Warm honey gold for heading */
         }
 
         .service-item p {
             font-size: 1rem;
-            color: #6B4F31; /* Lighter brown */
+            color: #555555;
         }
 
         /* Testimonial Section */
         .testimonial {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
-            background: #FFF5E1; /* Soft peachy ivory */
+            background: #f9f9f9; /* Soft gray background */
         }
 
         .testimonial h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #4A3F35; /* Dark brown */
+            font-size: 2.5rem;
+            color: #333333;
+            margin-bottom: 30px;
         }
 
         blockquote {
-            font-size: 1rem;
-            color: #6B4F31; /* Lighter brown */
+            font-size: 1.2rem;
+            color: #777777;
             font-style: italic;
-            margin: 0 auto 20px;
             max-width: 600px;
+            margin: 0 auto 20px;
         }
 
         blockquote footer {
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #F4A261; /* Warm honey gold */
+            font-size: 1rem;
+            color: #FFB347;
             font-weight: bold;
         }
 
         /* Footer */
         footer {
-            background: #FFEFD5; /* Soft pastel peach */
-            color: #4A3F35;
+            background: #333333;
+            color: #ffffff;
             text-align: center;
-            padding: 10px 0;
-            font-size: 0.9rem;
+            padding: 20px 0;
+            font-size: 1rem;
         }
 
         footer a {
-            color: #F4A261; /* Warm honey gold */
+            color: #FFB347;
             font-weight: bold;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 60px 20px;
-            }
-
-            .hero-section .title {
-                font-size: 2.2rem;
-            }
-
-            .services {
-                padding: 20px;
-            }
-        }
     </style>
 </head>
+<body>
+
+    <!-- Navigation -->
     <nav>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="title">Capturing Life's Moments</h1>
+        <p class="tagline">Beautiful photography for your special occasions</p>
+        <a href="#services" class="cta-button">Explore My Work</a>
+    </section>
+
+    <!-- Intro Section -->
     <section class="intro">
-        <div class="container">
-            <h2>Welcome to Alondra's Photography</h2>
-            <p>Hi, I’m Alondra. Photography is my passion, and I specialize in capturing beautiful landscapes, candid moments, and portrait photography. Whether you're looking for stunning images of nature or professional photos of your family or business, I am here to help you preserve those precious moments forever.</p>
-            <a href="about.html" class="cta-button">Learn More About Me</a>
+        <h2>Welcome to Alondra's Photography</h2>
+        <p>As a professional photographer, I specialize in capturing beautiful moments that last a lifetime. Whether it’s a wedding, family portrait, or corporate event, I’m here to bring your vision to life.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>My Services</h2>
+        <div class="service-item">
+            <img src="images/service1.jpg" alt="Service 1">
+            <h3>Weddings</h3>
+            <p>Capturing your special day with timeless photos.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/service2.jpg" alt="Service 2">
+            <h3>Portraits</h3>
+            <p>Professional and personal portraits for any occasion.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/service3.jpg" alt="Service 3">
+            <h3>Events</h3>
+            <p>Documenting all types of events with passion and precision.</p>
         </div>
     </section>
 
-    <section class="services">
-        <div class="container">
-            <h2>Services</h2>
-            <div class="service-item">
-                <img src="images/bonbon.jpeg" alt="Portrait Photography" loading="lazy">
-                <h3>Portrait Photography</h3>
-                <p>From professional headshots to family portraits, I create timeless images that capture the essence of your personality.</p>
-            </div>
-            <div class="service-item">
-                <img src="images/landscape.JPG" alt="Landscape Photography" loading="lazy">
-                <h3>Landscape Photography</h3>
-                <p>Explore the beauty of nature with breathtaking images that showcase the magnificence of the world around us.</p>
-            </div>
-            <div class="service-item">
-                <img src="images/fifthteen.JPG" alt="Event Photography" loading="lazy">
-                <h3>Event Photography</h3>
-                <p>Whether it's a wedding, corporate event, or family gathering, I’ll help you capture the special moments in a way that tells your story.</p>
-            </div>
-        </div>
-    </section>
-
+    <!-- Testimonial Section -->
     <section class="testimonial">
-        <div class="container">
-            <h2>What Clients Are Saying</h2>
-            <blockquote>
-                <p>"Alondra's Photography made our family photoshoot such a memorable experience. The pictures are absolutely stunning!"</p>
-                <footer>- Emily & Jake, Family Session</footer>
-            </blockquote>
-        </div>
+        <h2>What My Clients Say</h2>
+        <blockquote>
+            "Alondra's photography skills are unmatched. She truly captured the essence of our special day."
+            <footer>— Sarah & John</footer>
+        </blockquote>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Alondra's Photography. All Rights Reserved.</p>
-        <p>
-            <a href="https://www.facebook.com/profile.php?id=100089022713393" target="_blank">Facebook</a> |
-            <a href="https://www.instagram.com/alondra._.photography/" target="_blank">Instagram</a>
-        </p>
+        <p>&copy; 2025 Alondra's Photography. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
     </footer>
+
 </body>
 </html>
+
