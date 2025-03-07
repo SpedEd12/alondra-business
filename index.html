@@ -133,23 +133,24 @@
             margin-bottom: 30px;
         }
 
-      /* Services Section */
+/* Services Section */
 .services {
     padding: 60px 20px;
     text-align: center;
     background: #ffffff; /* White background */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between the items */
+    flex-wrap: wrap; /* Ensure items wrap if screen is smaller */
 }
-
+        
 .services h2 {
     font-size: 2.5rem;
     color: #333333;
     margin-bottom: 40px;
 }
-
+        
 .service-item {
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
     width: 250px; /* Set width for each service item */
     height: 350px; /* Set a fixed height for uniformity */
     box-sizing: border-box; /* Ensure padding is inside the width/height */
@@ -157,6 +158,10 @@
     background-color: #f9f9f9; /* Optional: background color for the service item */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for service items */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content inside each service item */
+    justify-content: space-between; /* Distribute space evenly within the service item */
 }
 
 .service-item img {
