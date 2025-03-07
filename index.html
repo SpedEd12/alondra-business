@@ -141,15 +141,19 @@
     display: flex;
     justify-content: center; /* Center the items horizontally */
     gap: 20px; /* Space between the items */
-    flex-wrap: wrap; /* Ensure items wrap if screen is smaller */
+    flex-wrap: wrap; /* Ensures items wrap if the screen is small */
 }
-        
+
+/* Service Title */
 .services h2 {
     font-size: 2.5rem;
     color: #333333;
     margin-bottom: 40px;
+    width: 100%; /* Ensures the h2 takes up full width */
+    text-align: center; /* Ensures the text is centered */
 }
-        
+
+/* Each Service Item */
 .service-item {
     width: 250px; /* Set width for each service item */
     height: 350px; /* Set a fixed height for uniformity */
@@ -162,6 +166,19 @@
     flex-direction: column;
     align-items: center; /* Center the content inside each service item */
     justify-content: space-between; /* Distribute space evenly within the service item */
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%; /* Make the service items take up more space on small screens */
+        margin-bottom: 20px;
+    }
 }
 
 .service-item img {
