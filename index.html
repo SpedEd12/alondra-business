@@ -10,140 +10,141 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #ffffff; /* Light text */
-            background-color: #1a1a1a; /* Dark gray background */
+            color: #4A3F35; /* Dark brown for readability */
+            background-color: #FFF8E7; /* Soft warm cream */
         }
 
+        /* Links */
         a {
             text-decoration: none;
-            color: #ffb400; /* Gold accent for links */
+            color: #F4A261; /* Warm honey gold */
         }
 
         a:hover {
             text-decoration: underline;
+            color: #E68950; /* Slightly deeper warm gold */
         }
 
- /* Hero Section with Background Image */
-.hero-section {
-    position: relative;
-    background: url('images/about_me.JPG') no-repeat center center/cover;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 20px;
-    min-height: 250px; /* Ensures enough space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+        /* Hero Section */
+        .hero-section {
+            background: url('images/about_me.JPG') no-repeat center center/cover;
+            color: #4A3F35; /* Dark brown for contrast */
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Dark Overlay for Better Readability */
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust transparency if needed */
-    z-index: 1;
-}
+        /* Hero Overlay */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 248, 231, 0.6); /* Warm light overlay */
+            z-index: 1;
+        }
 
-/* Ensure Text Appears on Top */
-.hero-section .title,
-.hero-section .tagline,
-.hero-section .cta-button {
-    position: relative;
-    z-index: 2;
-}
+        /* Ensure Text Appears on Top */
+        .hero-section .title,
+        .hero-section .tagline,
+        .hero-section .cta-button {
+            position: relative;
+            z-index: 2;
+        }
 
-/* Title Styling */
-.hero-section .title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+        /* Title Styling */
+        .hero-section .title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-/* Tagline Styling */
-.hero-section .tagline {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
+        /* Tagline Styling */
+        .hero-section .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
 
-/* CTA Button */
-.cta-button {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #ffcc00;
-    color: #1a1a1a;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
-}
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #FFB347; /* Soft golden orange */
+            color: #4A3F35;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(255, 179, 71, 0.3);
+        }
 
-.cta-button:hover {
-    background: #e6b800;
-    transform: translateY(-2px);
-}
+        .cta-button:hover {
+            background: #E68950; /* Darker warm gold */
+            transform: translateY(-2px);
+        }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 70px 20px;
-        min-height: 300px;
-    }
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 70px 20px;
+                min-height: 300px;
+            }
 
-    .hero-section .title {
-        font-size: 2.4rem;
-    }
+            .hero-section .title {
+                font-size: 2.4rem;
+            }
 
-    .hero-section .tagline {
-        font-size: 1.2rem;
-    }
-}
+            .hero-section .tagline {
+                font-size: 1.2rem;
+            }
+        }
 
         /* Navigation */
         nav {
-            background: #1a1a1a;
+            background: #FFF8E7; /* Soft warm cream */
             padding: 10px 0;
             text-align: center;
         }
 
         nav a {
             margin: 0 15px;
-            color: #ffb400; /* Gold text for links */
+            color: #F4A261; /* Warm honey gold */
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #d99a00; /* Darker gold hover */
+            color: #E68950; /* Darker gold hover */
         }
 
         /* Intro Section */
         .intro {
             padding: 40px 20px;
             text-align: center;
-            background: #292929; /* Slightly lighter gray */
+            background: #FFF5E1; /* Soft peachy ivory */
         }
 
         .intro h2 {
             margin-bottom: 20px;
             font-size: 2.2rem;
-            color: #ffffff;
+            color: #4A3F35; /* Dark brown */
         }
 
         .intro p {
             margin-bottom: 20px;
             font-size: 1rem;
-            color: #cccccc; /* Light gray text */
+            color: #6B4F31; /* Lighter brown text */
         }
 
         /* Services Section */
         .services {
-            background: #1a1a1a; /* Matches dark background */
+            background: #FAF3E0; /* Warm beige for subtle contrast */
             padding: 40px 20px;
         }
 
@@ -151,7 +152,7 @@
             text-align: center;
             margin-bottom: 30px;
             font-size: 2rem;
-            color: #ffffff;
+            color: #4A3F35; /* Dark brown */
         }
 
         .service-item {
@@ -169,30 +170,30 @@
         .service-item h3 {
             font-size: 1.4rem;
             margin-bottom: 10px;
-            color: #ffb400;
+            color: #F4A261; /* Warm honey gold */
         }
 
         .service-item p {
             font-size: 1rem;
-            color: #cccccc;
+            color: #6B4F31; /* Lighter brown */
         }
 
         /* Testimonial Section */
         .testimonial {
             padding: 40px 20px;
             text-align: center;
-            background: #292929; /* Slightly lighter gray */
+            background: #FFF5E1; /* Soft peachy ivory */
         }
 
         .testimonial h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #4A3F35; /* Dark brown */
         }
 
         blockquote {
             font-size: 1rem;
-            color: #cccccc;
+            color: #6B4F31; /* Lighter brown */
             font-style: italic;
             margin: 0 auto 20px;
             max-width: 600px;
@@ -201,21 +202,21 @@
         blockquote footer {
             margin-top: 10px;
             font-size: 0.9rem;
-            color: #ffb400;
+            color: #F4A261; /* Warm honey gold */
             font-weight: bold;
         }
 
         /* Footer */
         footer {
-            background: #1a1a1a;
-            color: #cccccc;
+            background: #FFEFD5; /* Soft pastel peach */
+            color: #4A3F35;
             text-align: center;
             padding: 10px 0;
             font-size: 0.9rem;
         }
 
         footer a {
-            color: #ffb400;
+            color: #F4A261; /* Warm honey gold */
             font-weight: bold;
         }
 
@@ -235,15 +236,6 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="hero-section">
-            <h1 class="title">Alondra's Photography</h1>
-            <p class="tagline">Capturing the Moments That Matter</p>
-            <a href="gallery.html" class="cta-button">View Gallery</a>
-        </div>
-    </header>
-
     <nav>
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
